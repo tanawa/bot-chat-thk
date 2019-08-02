@@ -11,7 +11,8 @@ function training(key,text){
 function processing(){
 	let text=document.getElementById("input").value;
 	if(data[text]!=undefined){
-		document.getElementById("output").innerHTML=sys+data[text];
+		let system=sys+data[text];
+		document.getElementById("output").innerHTML=system;
 	}else{
 		document.getElementById("output").innerHTML="ไม่รู้เรื่องเลย ช่วยสอนหน่อย";
 	}
