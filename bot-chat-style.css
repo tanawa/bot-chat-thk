@@ -34,7 +34,7 @@ button{
 	width: 200;
 	height: 200px;
 	border-radius: 15px 15px 15px 15px;
-	background-image: url('logo.png');
+	background-image: url('https://raw.githubusercontent.com/tanawa/bot-chat-thk/gh-pages/logo.png');
 	background-size: cover;
 	text-shadow: 0px 0px 10px 0px #000;
 }
