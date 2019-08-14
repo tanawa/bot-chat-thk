@@ -1,4 +1,4 @@
-
+console.log("version 1.2.1 chatbot thk");
 var sys="ระบบ : ";
 var data={
 	"สวัสดี":"สวัสดีจ้า",
