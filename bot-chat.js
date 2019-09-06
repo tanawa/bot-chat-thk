@@ -22,11 +22,13 @@ function processing(){
 				let system=sys+data[i];
 		       console.log(system);
 		       document.getElementById("output").innerHTML=system;
+				responsiveVoice.speak(system,"Thai Female");
 			}
 		}
 		if(run){
 			console.log("ไม่รู้เรื่องเลย ช่วยสอนหน่อย");
 		document.getElementById("output").innerHTML="ไม่รู้เรื่องเลย ช่วยสอนหน่อย";
+			responsiveVoice.speak("ไม่รู้เรื่องเลย ช่วยสอนหน่อย","Thai Female");
 		}
 		
 	}
