@@ -14,7 +14,7 @@ function processing(){
 		let system=sys+data[text];
 		console.log(system);
 		document.getElementById("output").innerHTML=system;
-		responsiveVoice.speak(system,"Thai Female");
+		responsiveVoice.speak(data[text],"Thai Female");
 	}else{
 		let run=true;
 		for(i in data){
@@ -23,7 +23,7 @@ function processing(){
 				let system=sys+data[i];
 		       console.log(system);
 		       document.getElementById("output").innerHTML=system;
-				responsiveVoice.speak(system,"Thai Female");
+				responsiveVoice.speak(data[i],"Thai Female");
 			}
 		}
 		if(run){
