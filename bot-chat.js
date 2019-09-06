@@ -12,18 +12,18 @@ function processing(){
 	let text=document.getElementById("input").value;
 	if(data[text]!=undefined){
 		let system=sys+data[text];
-		console.log(system);
-		document.getElementById("output").innerHTML=system;
 		responsiveVoice.speak(data[text],"Thai Female");
+		console.log(data[text]);
+		document.getElementById("output").innerHTML=system;
 	}else{
 		let run=true;
 		for(i in data){
 			if(text.search(i)>-1){
 				run=false;
 				let system=sys+data[i];
-		       console.log(system);
-		       document.getElementById("output").innerHTML=system;
+		       console.log(data[i]);
 				responsiveVoice.speak(data[i],"Thai Female");
+		       document.getElementById("output").innerHTML=system;
 			}
 		}
 		if(run){
