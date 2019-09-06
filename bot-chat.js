@@ -14,6 +14,7 @@ function processing(){
 		let system=sys+data[text];
 		console.log(system);
 		document.getElementById("output").innerHTML=system;
+		responsiveVoice.speak(system,"Thai Female");
 	}else{
 		let run=true;
 		for(i in data){
